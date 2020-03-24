@@ -27,7 +27,7 @@ iteration_step:
     movups xmm1, [rdx + rax*4]
     addps xmm0, xmm1
     movups [rcx + rax*4], xmm0
-    inc rax
+    add rax, 4
     cmp rdi, rax
     jne iteration_step
 

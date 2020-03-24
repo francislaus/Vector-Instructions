@@ -32,7 +32,10 @@ int main()
     fill_memory(a, 1.0, LENGTH);
     fill_memory(b, 2.0, LENGTH);
     gettimeofday(&start, NULL);
-    vector_add(LENGTH, a, b, c);
+    for(int i = 0; i < 100; i++)
+    {
+        vector_add(LENGTH, a, b, c);
+    }
     gettimeofday(&end, NULL);
     for(int i = 0; i < LENGTH; i++)
     {
